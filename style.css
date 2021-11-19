@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Red+Hat+Display:ital,wght@0,400;0,600;0,800;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color-pb: hsl(225, 100%, 94%);
+  --primary-color-bb: hsl(245, 75%, 52%);
+
+  --seconday-color-vpb: hsl(225, 100%, 98%);
+  --secondary-color-desb: hsl(224, 23%, 55%);
+  --secondary-color-darb: hsl(223, 47%, 23%);
+  --secondary-color-link: hsl(228, 45%, 44%);
+}
+
+body {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-color: var(--primary-color-pb);
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  color: var(--primary-color-bb);
+}
+
+image {
+  width: 100%;
+}
+
+.container {
+  width: 350px;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn {
+  display: inline-block;
+  margin: 20px auto;
+  width: 100%;
+  background-color: var(--primary-color-bb);
+  border-radius: 10px;
+  padding: 10px 0;
+  box-shadow: 0 15px 10px rgba(51, 16, 191, 0.149);
+  transition: 1s ease-in-out;
+}
+
+/*Page*/
+
+.card {
+  max-width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 50px;
+  left: 450px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/*section2*/
+
+.card-title {
+  font-size: 32px;
+  font-weight: 900;
+  margin: 30px 0 20px 0;
+}
+
+.param {
+  width: 300px;
+  margin: 0 auto;
+}
+
+/*section3*/
+
+.sub {
+  height: 70px;
+  margin: 10px auto;
+  border-radius: 10px;
+  background-color: var(--seconday-color-vpb);
+  justify-content: space-around;
+  height: 70px;
+}
+
+.icon {
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-color-pb);
+  margin: 10px;
+}
+
+.plan {
+  text-align: left;
+  width: 160px;
+  font-size: 12px;
+  margin: 15px 0;
+}
+
+.change {
+  margin: 20px 15px;
+}
+
+.change a {
+  font-weight: 900;
+  font-size: small;
+  transition: 500ms;
+}
+
+.change a:hover {
+  color: var(--secondary-color-darb);
+}
+
+/*section4*/
+
+.button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+  font-size: small;
+  transition: 500ms;
+}
+
+.section4 :hover {
+  opacity: 0.9;
+  transform: scale(99%);
+}
+
+/*section5*/
+
+.section5 {
+  margin-bottom: 40px;
+}
+
+.section5 a {
+  text-decoration: none;
+  font-size: small;
+  font-weight: bolder;
+  transition: 500ms;
+}
+
+.section5 a:hover {
+  color: var(--secondary-color-darb);
+}
