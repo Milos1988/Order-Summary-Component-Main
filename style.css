@@ -142,7 +142,7 @@ image {
 
 .section4 :hover {
   opacity: 0.9;
-  transform: scale(99%);
+  color: var(--secondary-color-darb);
 }
 
 /*section5*/
