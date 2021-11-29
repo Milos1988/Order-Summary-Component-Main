@@ -1,5 +1,3 @@
-# Order-Summary-Component-Main
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,59 +11,45 @@
   <title>Frontend Mentor | Order summary card</title>
 </head>
 <body>
-  <section class="box">
+  <div class="container">
     <div class="card">
-      <div class="section1">
-        <img src="images/illustration-hero.svg" alt="">
+      <div class="header">
+        <img src="/order-summary-component-main/images/illustration-hero.svg" alt="">
       </div>
 
-      <div class="section2">
-        <div class="container">
-            <h2 class="card-title">
-              Order Summary
-            </h2>
-
-            <div class="param">
-              <p>You can now listen to millions of songs, audiobooks and podcasts on any device anywhere you like</p>
-            </div>
-        </div>    
-      </div>
-
-      <div class="section3">
-        <div class="container">
-          <div class="sub flex">
-            <div class="icon flex">
-              <i class="fa fa-music" aria-hidden="true"></i>
-            </div>
-
-            <div class="plan">
-              <h2>Annual Plan</h2>
-              <p>$59.99/year</p>
-            </div>
-            
-
-            <div class="change">
-              <a href="index.html">Change</a>
-            </div>
-          </div>  
+      <div class="container-card">
+        <div class="content1">
+          <h1>Order Summary</h1>
+          <p>You can now listen to millions of songs, audiobooks
+          and podcasts on any device anywhere you like.
+          </p>
         </div>
-      </div>
+        <div class="content2">
+          <div class="icon">
+            <i class="fa fa-music" aria-hidden="true"></i>
+          </div>
 
-      <div class="section4">
-        <div class="container">
-          <div class="button btn">
+          <div class="plan">
+            <h2>Annual Plan</h2>
+            <h3>$59.99/year</h3>
+          </div>
+
+          <div class="btn">
+            <a href="index.html">Change</a>
+          </div>
+        </div>
+        <div class="content3">
+          <div class="btn1">
             <a href="index.html">Proceed to Payment</a>
           </div>
-        </div>  
-      </div>
+          <div class="btn2">
+            <a href="index.html">Cancel Order</a>
+          </div>
 
-      <div class="section5">
-        <div class="container">
-          <a href="index.html">Cancel Order</a>
         </div>
       </div>
+      </div>
     </div>
-  </section>
-   
+  </div>   
 </body>
 </html>
