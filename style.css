@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Red+Hat+Display:ital,wght@0,400;0,600;0,800;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -17,147 +17,120 @@
 }
 
 body {
-  text-align: center;
-  font-family: "Red Hat Display", sans-serif;
-  min-height: 100vh;
-  background-image: url("images/pattern-background-desktop.svg");
+  background-image: url("/order-summary-component-main/images/pattern-background-desktop.svg");
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-color: hsl(225, 100%, 94%);
-  color: var(--secondary-color-desb);
+  background-size: 100% 50%;
+  font-family: "Lato", sans-serif;
+  background-color: var(--primary-color-pb);
 }
 
-p {
-  font-size: 16px;
+img {
+  width: 100%;
+  height: 200px;
 }
 
 a {
-  color: var(--primary-color-bb);
+  transition: 400ms;
 }
 
-image {
-  width: 100%;
+h1 {
+  padding: 5px 0;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+p {
+  margin: 10px 0;
+  padding: 10px 0;
+  font-weight: 300;
+  font-size: 0.95rem;
 }
 
 .container {
-  width: 350px;
-  margin: 0 auto;
-  padding: 5px 0;
+  max-width: 380px;
+  margin: 65px auto;
 }
-
-.flex {
-  display: flex;
-}
-
-.btn {
-  display: inline-block;
-  line-height: 3;
-  margin: 20px auto;
-  width: 100%;
-  height: 60px;
-  background-color: var(--primary-color-bb);
-  border-radius: 10px;
-  padding: 10px 0;
-  box-shadow: 0 15px 10px rgba(51, 16, 191, 0.149);
-  transition: 1s ease-in-out;
-}
-
-/*Page*/
 
 .card {
-  max-width: 450px;
   border-radius: 20px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-  position: relative;
-  top: 30px;
-  left: 500px;
-  background-color: #fff;
   overflow: hidden;
-  color: #333;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-/*section2*/
-
-.card-title {
-  font-size: 32px;
-  font-weight: 900;
-  margin: 30px 0 20px 0;
+.container-card {
+  padding: 30px 50px;
+  background-color: #fff;
+  text-align: center;
 }
 
-.param {
-  width: 300px;
-  margin: 0 auto;
+.header {
+  height: 200px;
 }
 
-/*section3*/
-
-.sub {
-  height: 70px;
-  margin: 10px auto;
+.content2 {
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
   border-radius: 10px;
   background-color: var(--seconday-color-vpb);
-  justify-content: space-around;
-  height: 70px;
+  padding: 15px 0;
 }
 
 .icon {
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  border-radius: 50%;
+  line-height: 2.5;
+  margin: 0 auto;
+  border-radius: 100%;
+  padding: 0 11px;
   background-color: var(--primary-color-pb);
-  margin: 10px;
+  color: var(--primary-color-bb);
 }
 
 .plan {
   text-align: left;
-  width: 160px;
-  font-size: 12px;
-  margin: 15px 0;
+  line-height: 1.5;
 }
 
-.change {
-  margin: 20px 15px;
+.btn a {
+  color: var(--primary-color-bb);
+  line-height: 2.5;
+  font-weight: 700;
+  font-size: 15px;
 }
 
-.change a {
-  font-weight: 900;
-  font-size: small;
-  transition: 500ms;
+.btn1 {
+  padding: 10px 0 14px 0;
+  margin: 20px 0;
+  background-color: var(--primary-color-bb);
+  border-radius: 10px;
 }
 
-.change a:hover {
-  color: var(--secondary-color-desb);
-}
-
-/*section4*/
-
-.button a {
+.btn1 a {
   text-decoration: none;
   color: #fff;
-  font-weight: bolder;
-  font-size: small;
-  transition: 500ms;
 }
 
-.section4 :hover {
-  opacity: 0.9;
-  color: var(--secondary-color-darb);
+.btn2 {
+  margin: 10px 0;
 }
 
-/*section5*/
-
-.section5 {
-  margin-bottom: 40px;
-}
-
-.section5 a {
+.btn2 a {
   text-decoration: none;
-  font-size: small;
-  font-weight: bolder;
-  transition: 500ms;
+  font-weight: 600;
 }
 
-.section5 a:hover {
-  color: var(--secondary-color-darb);
+/*Hover States*/
+
+.btn a:hover,
+.btn1 a:hover,
+.btn2 a:hover {
+  color: lightseagreen;
 }
