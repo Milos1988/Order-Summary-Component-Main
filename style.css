@@ -17,7 +17,7 @@
 }
 
 body {
-  background-image: url("Images/pattern-background-desktop.svg");
+  background-image: url("/Images/pattern-background-desktop.svg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100% 50%;
